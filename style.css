@@ -1,5 +1,5 @@
-@font-face { font-family:"Bricolage Grotesque"; src:url("fonts/bricolage_grotesque.ttf") format("truetype"); font-weight:200 800; font-display:swap; }
-@font-face { font-family:"Instrument Sans"; src:url("fonts/instrument_sans.ttf") format("truetype"); font-weight:400 700; font-display:swap; }
+@font-face { font-family:"Bricolage Grotesque"; src:url("/fonts/bricolage_grotesque.ttf") format("truetype"); font-weight:200 800; font-display:swap; }
+@font-face { font-family:"Instrument Sans"; src:url("/fonts/instrument_sans.ttf") format("truetype"); font-weight:400 700; font-display:swap; }
 
 :root { --bg:#f7f1e4; --card:#fffdf7; --ink:#17130f; --muted:#4a423a; --line:#17130f; --accent:#2f4bd8; --on-accent:#fffdf7; }
 @media (prefers-color-scheme: dark) {
