@@ -10,4 +10,4 @@ Developer site, served by GitHub Pages at the root of `https://makzimalist.githu
 
 **Privacy-policy URLs are registered in Play Console — don't move them.**
 
-To add an app: copy `apps/flags-and-capitals/`, adjust text, add a card to `index.html`.
+To add an app: copy `apps/flags-and-capitals/`, adjust text, add an `<a class="cell">` to the `#apps` section of `index.html`.
