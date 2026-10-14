@@ -18,9 +18,14 @@ main { flex:1; }
 .top { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-top:24px; padding-bottom:24px; }
 .top .brand { font-weight:800; font-size:19px; text-decoration:none; letter-spacing:-.01em; }
 .top .brand i { font-style:normal; color:var(--neon); }
-.top nav a { margin-left:22px; text-decoration:none; color:var(--mute); transition:color .2s; }
-.top nav a:hover { color:var(--neon); }
-.foot { border-top:1px solid var(--line); padding-top:22px; padding-bottom:40px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:var(--mute); }
+.top-right { display:flex; align-items:center; gap:22px; }
+.top-right > a { white-space:nowrap; text-decoration:none; color:var(--mute); transition:color .2s; }
+.top-right > a:hover { color:var(--neon); }
+.lang { display:flex; padding:3px; border:1px solid var(--line); border-radius:999px; background:var(--surface); }
+.top .lang a { margin:0; padding:5px 11px; border-radius:999px; text-decoration:none; color:var(--mute); }
+.top .lang a[href]:hover { color:var(--neon); }
+.top .lang a[aria-current] { background:var(--ink); color:var(--bg); }
+.foot {border-top:1px solid var(--line); padding-top:22px; padding-bottom:40px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:var(--mute); }
 .foot a { margin-right:18px; text-decoration:none; }
 .foot a:hover { color:var(--neon); }
 
@@ -79,7 +84,7 @@ a.cell:hover .go { background:var(--neon); color:var(--bg); border-color:var(--n
 /* Legal pages */
 .prose { padding-top:40px; padding-bottom:80px; }
 .prose > * { max-width:720px; }
-.prose h1 { font-weight:800; font-size:clamp(36px, 5.5vw, 60px); line-height:1; letter-spacing:-.04em; margin:0 0 24px; }
+.prose h1 { font-weight:800; font-size:clamp(30px, 5.5vw, 60px); overflow-wrap:break-word; hyphens:auto; line-height:1; letter-spacing:-.04em; margin:0 0 24px; }
 .prose h2 { font-weight:800; font-size:24px; letter-spacing:-.02em; line-height:1.2; margin:2.2em 0 .5em; }
 .prose h3 { font-weight:800; font-size:19px; margin:1.6em 0 .4em; }
 .prose p, .prose li { color:var(--soft); }
@@ -95,7 +100,8 @@ a.cell:hover .go { background:var(--neon); color:var(--bg); border-color:var(--n
   .cell img { width:80px; height:80px; border-radius:20px; }
   .cell.hero img { width:96px; height:96px; border-radius:22px; }
   .go { display:none; }
+  .top-right { gap:12px; }
   .about, .feats { grid-template-columns:1fr; gap:16px; }
-  .top nav a { margin-left:14px; }
 }
+@media (max-width:420px) { .top-right > a { display:none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
