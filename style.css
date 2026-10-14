@@ -73,6 +73,9 @@ a.cell:hover .go { background:var(--neon); color:var(--bg); border-color:var(--n
 .feat h3 { font-weight:800; font-size:26px; letter-spacing:-.025em; line-height:1.1; margin:10px 0 8px; }
 .feat p { margin:0; color:var(--soft); font-size:17px; }
 
+.shots { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 0 20px; margin:0 0 40px; scrollbar-width:thin; scrollbar-color:var(--line) transparent; }
+.shots img { flex:0 0 auto; width:min(240px, 62vw); height:auto; border-radius:20px; scroll-snap-align:start; border:1px solid var(--line); }
+
 /* Legal pages */
 .prose { padding-top:40px; padding-bottom:80px; }
 .prose > * { max-width:720px; }
