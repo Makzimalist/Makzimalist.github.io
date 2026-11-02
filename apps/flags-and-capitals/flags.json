@@ -1,7 +1,7 @@
 {
   "flags": {
-    "inAppReview": false,
+    "inAppReview": true,
     "league": false,
-    "notifications": false
+    "notifications": true
   }
 }
