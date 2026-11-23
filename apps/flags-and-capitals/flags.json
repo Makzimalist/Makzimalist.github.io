@@ -1,7 +1,7 @@
 {
   "flags": {
-    "hintAds": false,
-    "hintPromo": true,
+    "hintAds": true,
+    "hintPromo": false,
     "inAppReview": true,
     "league": false,
     "notifications": true
